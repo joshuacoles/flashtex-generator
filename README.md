@@ -1,15 +1,27 @@
-# flashtex-gen
+# Flashtex Gen
 
-To install dependencies:
+I use the Flashtex app to do spaced repitition, but I want to write the cards in markdown files for easier editing and
+version control. This script converts markdown files to the Flashtex format.
 
-```bash
-bun install
-```
-
-To run:
+## Usage
 
 ```bash
-bun run index.ts
+bun run src/index.ts "Deck Name" "output path" "input markdown files..."
 ```
 
-This project was created using `bun init` in bun v1.1.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+In addition, a macros file will be generated from the combination of initial latex preludes in each file and written to
+`$output-file-name.tex` next to the output file.
+
+## Example Markdown File
+
+```markdown
+$$
+Optional math prelude
+$$
+
+## Card name
+... card contents ...
+
+## Card name
+... card contents ...
+```

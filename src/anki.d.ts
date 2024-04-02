@@ -1,4 +1,4 @@
-declare module 'anki-apkg-export' {
+declare module '@paperclipsapp/anki-apkg-export' {
     import {Database} from "sql.js";
 
     export default class AnkiExport {

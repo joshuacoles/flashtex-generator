@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 
-import AnkiExport from "anki-apkg-export";
+import AnkiExport from "@paperclipsapp/anki-apkg-export";
 
 const [deckName, outputPath, ...files] = process.argv.slice(2);
 
@@ -22,7 +22,7 @@ interface File {
 }
 
 function cardsFromFile(path: string): File {
-    const markdown = fs.readFileSync('./5 Elastic Materials.md', 'utf8');
+    const markdown = fs.readFileSync(path, 'utf8');
     const lines = markdown.split('\n');
 
     const h2Start = /^## /;

@@ -1,7 +1,15 @@
 # Flashtex Gen
 
-I use the Flashtex app to do spaced repitition, but I want to write the cards in markdown files for easier editing and
-version control. This script converts markdown files to the Flashtex format.
+I use the [Flashtex](https://flashtex.app/) app to do spaced repitition, but I want to write the cards in markdown files for easier editing and
+version control. This script converts markdown files to the `apkg` Anki format which Flashtex can import.
+
+## Card Identity
+
+Cards are identified by the deck name and the card title. If a card with the same title already exists in the deck,
+it will be updated. If you don't change either of these, the card will be updated.
+
+While I haven't checked, the Flashtex app adds a tag for the deck name and the generic `#anki` tag to each card, so I
+suggest you don't use these tags in your cards, nor name the deck `anki`.
 
 ## Usage
 

@@ -2,6 +2,7 @@
   "name": "flashtex-gen",
   "module": "src/index.ts",
   "type": "module",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest",
     "@types/sql.js": "^1.4.9"
